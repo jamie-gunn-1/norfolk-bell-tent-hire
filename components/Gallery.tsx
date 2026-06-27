@@ -5,9 +5,9 @@ import Lightbox from "./Lightbox";
 import Image from "next/image";
 
 const images = [
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80",
-  "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=1400&q=80",
-  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80",
+  "/images/Wedding1.png",
+  "/images/Wedding2.png",
+  "/images/Wedding3.png",
   "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?auto=format&fit=crop&w=1400&q=80",
   "https://images.unsplash.com/photo-1519817914152-22d216bb9170?auto=format&fit=crop&w=1400&q=80",
   "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
