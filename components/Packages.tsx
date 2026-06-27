@@ -56,9 +56,12 @@ export default function Packages() {
                 ))}
               </ul>
 
-              <button className="mt-6 btn-primary w-full">
-                Enquire Now
-              </button>
+              <a
+  href="#contact"
+  className="mt-6 btn-primary w-full inline-block text-center"
+>
+  Enquire Now
+</a>
             </div>
           ))}
         </div>
