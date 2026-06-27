@@ -35,13 +35,16 @@ export default function Hero() {
 
         <div className="flex gap-4 justify-center flex-wrap">
 
-          <button className="btn-primary">
-            View Packages
-          </button>
+          <a href="#packages" className="btn-primary inline-block">
+  View Packages
+</a>
 
-          <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
-            Get a Quote
-          </button>
+<a
+  href="#contact"
+  className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition inline-block"
+>
+  Get a Quote
+</a>
 
         </div>
 
