@@ -1,33 +1,50 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#2F5D50]">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
+    <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
+
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80"
+          alt="Luxury bell tent in countryside"
+          fill
+          priority
+          className="object-cover"
+        />
+
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+      </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center text-white">
-        <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-amber-200">
+      <div className="relative z-10 text-center text-white max-w-3xl px-6">
+
+        <p className="mb-4 tracking-[0.3em] text-xs uppercase text-[var(--sand)]">
           Luxury Glamping Experiences
         </p>
 
-        <h1 className="mb-6 text-5xl font-bold md:text-7xl">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Norfolk Bell Tent Hire
         </h1>
 
-        <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-200 md:text-xl">
-          Beautiful bell tents for weddings, festivals, birthdays, garden
-          parties and unforgettable weekends across Norfolk & Suffolk.
+        <p className="text-lg md:text-xl text-white/80 mb-10">
+          Beautiful bell tents for weddings, festivals, birthdays and unforgettable weekends across Norfolk & Suffolk.
         </p>
 
-        <div className="flex flex-col justify-center gap-4 sm:flex-row">
-          <button className="rounded-lg bg-amber-600 px-8 py-4 font-semibold transition hover:bg-amber-700">
+        <div className="flex gap-4 justify-center flex-wrap">
+
+          <button className="btn-primary">
             View Packages
           </button>
 
-          <button className="rounded-lg border border-white px-8 py-4 font-semibold transition hover:bg-white hover:text-black">
+          <button className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition">
             Get a Quote
           </button>
+
         </div>
+
       </div>
     </section>
   );

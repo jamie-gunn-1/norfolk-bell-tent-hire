@@ -16,12 +16,95 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+/* Typography system */
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), serif;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  line-height: 1.05;
+}
+
+h2 {
+  line-height: 1.15;
+}
+
+body, p, a, button {
   font-family: var(--font-inter), sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-playfair), serif;
+/* Better defaults */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2f5d50, #3f7a69);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 30px rgba(47, 93, 80, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(47, 93, 80, 0.35);
+}
+
+section {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+img {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle at 20% 20%,
+    rgba(255, 255, 255, 0.05),
+    transparent 40%
+  );
+  opacity: 0.6;
+  z-index: 9999;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
