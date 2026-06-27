@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="images/Hero.gif"
+          src="/images/Hero.gif"
           alt="Luxury bell tent in countryside"
           fill
           priority
